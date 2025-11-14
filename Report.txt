@@ -1,0 +1,54 @@
+Online Shoppers Intention Clustering
+
+Sai Lokesh Meela  
+------------------------------------------------------------
+Clustering Results and Rand Index Comparison
+------------------------------------------------------------
+
+This assignment explored unsupervised clustering on the "Online Shoppers Intention" dataset using two algorithms with k = 4:
+
+1. K-means Clustering  
+2. Agglomerative Clustering (Complete Linkage)
+
+The objective was to evaluate how closely the resulting clusters align with actual purchase outcomes (Revenue), using the **Rand Index (RI)**.
+
+------------------------------------------------------------
+1. K-means Clustering
+------------------------------------------------------------
+- Number of clusters: 4  
+- Cluster sizes:
+    Cluster 0: 1009  
+    Cluster 1: 1526  
+    Cluster 2: 1695  
+    Cluster 3: 8100  
+
+- Rand Index: **0.5155**
+
+K-means produced a reasonable distribution across clusters. However, the RI score shows that this method only moderately aligns with actual Revenue labels.
+
+------------------------------------------------------------
+2. Agglomerative Clustering (Complete Linkage)
+------------------------------------------------------------
+- Number of clusters: 4  
+- Cluster sizes:
+    Cluster 0: 12270  
+    Cluster 1: 3  
+    Cluster 2: 14  
+    Cluster 3: 43  
+
+- Rand Index: **0.7391**
+
+Although one cluster dominates in size, Agglomerative Clustering demonstrates a stronger match to the true Revenue labels, reflected by a significantly higher Rand Index.
+
+------------------------------------------------------------
+3. Comparison of Clustering Models
+------------------------------------------------------------
+- K-means Rand Index: 0.5155  
+- Agglomerative Clustering Rand Index: 0.7391  
+
+✅ **Agglomerative Clustering outperforms K-means** in this task. Despite imbalanced cluster sizes, it achieves a better alignment with true purchase behavior.
+
+------------------------------------------------------------
+Conclusion:
+→ **Agglomerative Clustering (Complete Linkage)** is the better model for this dataset based on the Rand Index evaluation.
+
